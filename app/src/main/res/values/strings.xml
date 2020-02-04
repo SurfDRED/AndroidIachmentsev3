@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Подписка</string>
+    <string name="tPolzovatel">Имя пользователя</string>
+    <string name="ePolzovatel"></string>
+    <string name="hintPolzovatel">Username</string>
+    <string name="tEmail">Электронная почта</string>
+    <string name="eEmail"></string>
+    <string name="buttOk">ОК</string>
+    <string name="buttClear">Очистить</string>
+    <string name="edInfo"></string>
+
+</resources>

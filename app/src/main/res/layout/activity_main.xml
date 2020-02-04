@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvPolzovatel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="107dp"
+        android:text="@string/tPolzovatel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/edPolzovatel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+    <EditText
+        android:id="@+id/edPolzovatel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorPrimary"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:text="@string/ePolzovatel"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tvPolzovatel"
+        app:layout_constraintTop_toTopOf="@id/tvPolzovatel" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/tEmail"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tvPolzovatel"
+        app:layout_constraintTop_toBottomOf="@id/tvPolzovatel" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:background="@color/colorPrimary"
+        android:contentDescription="@string/tEmail"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:text="@string/eEmail"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/tvPolzovatel"
+        app:layout_constraintTop_toBottomOf="@id/tvPolzovatel" />
+
+    <Button
+        android:id="@+id/buttonOk"
+        android:layout_width="211dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="280dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/buttOk"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/tvPolzovatel"
+        app:layout_constraintStart_toStartOf="@id/tvPolzovatel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="209dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="280dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/buttClear"
+        android:textSize="18sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="@id/tvPolzovatel"
+        app:layout_constraintStart_toStartOf="@id/tvPolzovatel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <TextView
+        android:id="@+id/edInfo"
+        android:layout_width="209dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="80dp"
+        android:inputType="textMultiLine"
+        android:text="@string/edInfo"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/buttonOk"
+        app:layout_constraintTop_toTopOf="@id/buttonOk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
